@@ -36,9 +36,6 @@ namespace ClientRESTAPI
             this.buscaNombreButton = new System.Windows.Forms.Button();
             this.buscarDNIButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.notepadButton = new System.Windows.Forms.Button();
-            this.adobeButton = new System.Windows.Forms.Button();
-            this.NavegadorButton = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.campo3 = new System.Windows.Forms.TextBox();
             this.nomyApeBuscaButton = new System.Windows.Forms.Button();
@@ -165,9 +162,6 @@ namespace ClientRESTAPI
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.notepadButton);
-            this.groupBox1.Controls.Add(this.adobeButton);
-            this.groupBox1.Controls.Add(this.NavegadorButton);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.eliminarButton);
             this.groupBox1.Controls.Add(this.dniTextBox);
@@ -195,47 +189,6 @@ namespace ClientRESTAPI
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Gestión";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // notepadButton
-            // 
-            this.notepadButton.BackColor = System.Drawing.Color.Transparent;
-            this.notepadButton.FlatAppearance.BorderSize = 0;
-            this.notepadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.notepadButton.Image = global::ClientRESTAPI.Properties.Resources.notepad;
-            this.notepadButton.Location = new System.Drawing.Point(370, 263);
-            this.notepadButton.Name = "notepadButton";
-            this.notepadButton.Size = new System.Drawing.Size(75, 63);
-            this.notepadButton.TabIndex = 19;
-            this.notepadButton.TabStop = false;
-            this.notepadButton.UseVisualStyleBackColor = false;
-            this.notepadButton.Click += new System.EventHandler(this.notepadButton_Click_1);
-            // 
-            // adobeButton
-            // 
-            this.adobeButton.BackColor = System.Drawing.Color.Transparent;
-            this.adobeButton.FlatAppearance.BorderSize = 0;
-            this.adobeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.adobeButton.Image = global::ClientRESTAPI.Properties.Resources.adobe1;
-            this.adobeButton.Location = new System.Drawing.Point(370, 340);
-            this.adobeButton.Name = "adobeButton";
-            this.adobeButton.Size = new System.Drawing.Size(75, 70);
-            this.adobeButton.TabIndex = 20;
-            this.adobeButton.TabStop = false;
-            this.adobeButton.UseVisualStyleBackColor = false;
-            // 
-            // NavegadorButton
-            // 
-            this.NavegadorButton.BackColor = System.Drawing.Color.Transparent;
-            this.NavegadorButton.FlatAppearance.BorderSize = 0;
-            this.NavegadorButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.NavegadorButton.Image = global::ClientRESTAPI.Properties.Resources.chrome1;
-            this.NavegadorButton.Location = new System.Drawing.Point(370, 420);
-            this.NavegadorButton.Name = "NavegadorButton";
-            this.NavegadorButton.Size = new System.Drawing.Size(75, 70);
-            this.NavegadorButton.TabIndex = 21;
-            this.NavegadorButton.TabStop = false;
-            this.NavegadorButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.NavegadorButton.UseVisualStyleBackColor = false;
             // 
             // groupBox2
             // 
@@ -642,9 +595,6 @@ namespace ClientRESTAPI
         private System.Windows.Forms.Button nomyApeBuscaButton;
         private System.Windows.Forms.Button nomyTelfBuscaButton;
         private System.Windows.Forms.ColorDialog colorDialog1;
-        private System.Windows.Forms.Button notepadButton;
-        private System.Windows.Forms.Button adobeButton;
-        private System.Windows.Forms.Button NavegadorButton;
         private System.Windows.Forms.Label labelClientes;
         private FontAwesome.Sharp.IconButton buttonAtras;
         private System.Windows.Forms.DataGridView dataGridView1;

@@ -34,16 +34,13 @@ namespace ClientRESTAPI
             this.buscarFechaYhora = new System.Windows.Forms.Button();
             this.campoBuscar1 = new System.Windows.Forms.TextBox();
             this.campoBuscar2 = new System.Windows.Forms.TextBox();
-            this.NavegadorButton = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.cantidadBuscarButton = new System.Windows.Forms.Button();
             this.fechaBuscarButton = new System.Windows.Forms.Button();
             this.buscarHoraButton = new System.Windows.Forms.Button();
             this.buscarIdCompra = new System.Windows.Forms.Button();
-            this.adobeButton = new System.Windows.Forms.Button();
             this.cantidadAnyadirTextBox = new System.Windows.Forms.TextBox();
-            this.notepadButton = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.eliminarCompraButton = new System.Windows.Forms.Button();
             this.horaAnyadirTextBox = new System.Windows.Forms.TextBox();
@@ -71,11 +68,8 @@ namespace ClientRESTAPI
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.groupBox3);
-            this.groupBox1.Controls.Add(this.NavegadorButton);
             this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.adobeButton);
             this.groupBox1.Controls.Add(this.cantidadAnyadirTextBox);
-            this.groupBox1.Controls.Add(this.notepadButton);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.eliminarCompraButton);
             this.groupBox1.Controls.Add(this.horaAnyadirTextBox);
@@ -142,22 +136,6 @@ namespace ClientRESTAPI
             this.campoBuscar2.Size = new System.Drawing.Size(148, 34);
             this.campoBuscar2.TabIndex = 14;
             this.campoBuscar2.TabStop = false;
-            // 
-            // NavegadorButton
-            // 
-            this.NavegadorButton.BackColor = System.Drawing.Color.Transparent;
-            this.NavegadorButton.FlatAppearance.BorderSize = 0;
-            this.NavegadorButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.NavegadorButton.Image = global::ClientRESTAPI.Properties.Resources.chrome1;
-            this.NavegadorButton.Location = new System.Drawing.Point(474, 671);
-            this.NavegadorButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.NavegadorButton.Name = "NavegadorButton";
-            this.NavegadorButton.Size = new System.Drawing.Size(112, 108);
-            this.NavegadorButton.TabIndex = 18;
-            this.NavegadorButton.TabStop = false;
-            this.NavegadorButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.NavegadorButton.UseVisualStyleBackColor = false;
-            this.NavegadorButton.Click += new System.EventHandler(this.NavegadorButton_Click);
             // 
             // groupBox2
             // 
@@ -254,21 +232,6 @@ namespace ClientRESTAPI
             this.buscarIdCompra.UseVisualStyleBackColor = false;
             this.buscarIdCompra.Click += new System.EventHandler(this.buscarIdCompra_Click);
             // 
-            // adobeButton
-            // 
-            this.adobeButton.BackColor = System.Drawing.Color.Transparent;
-            this.adobeButton.FlatAppearance.BorderSize = 0;
-            this.adobeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.adobeButton.Image = global::ClientRESTAPI.Properties.Resources.adobe1;
-            this.adobeButton.Location = new System.Drawing.Point(474, 522);
-            this.adobeButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.adobeButton.Name = "adobeButton";
-            this.adobeButton.Size = new System.Drawing.Size(112, 108);
-            this.adobeButton.TabIndex = 17;
-            this.adobeButton.TabStop = false;
-            this.adobeButton.UseVisualStyleBackColor = false;
-            this.adobeButton.Click += new System.EventHandler(this.adobeButton_Click);
-            // 
             // cantidadAnyadirTextBox
             // 
             this.cantidadAnyadirTextBox.Location = new System.Drawing.Point(174, 175);
@@ -277,21 +240,6 @@ namespace ClientRESTAPI
             this.cantidadAnyadirTextBox.Size = new System.Drawing.Size(168, 34);
             this.cantidadAnyadirTextBox.TabIndex = 4;
             this.cantidadAnyadirTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cantidadAnyadirTextBox_KeyPress);
-            // 
-            // notepadButton
-            // 
-            this.notepadButton.BackColor = System.Drawing.Color.Transparent;
-            this.notepadButton.FlatAppearance.BorderSize = 0;
-            this.notepadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.notepadButton.Image = global::ClientRESTAPI.Properties.Resources.notepad;
-            this.notepadButton.Location = new System.Drawing.Point(474, 388);
-            this.notepadButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.notepadButton.Name = "notepadButton";
-            this.notepadButton.Size = new System.Drawing.Size(112, 97);
-            this.notepadButton.TabIndex = 16;
-            this.notepadButton.TabStop = false;
-            this.notepadButton.UseVisualStyleBackColor = false;
-            this.notepadButton.Click += new System.EventHandler(this.notepadButton_Click);
             // 
             // label6
             // 
@@ -547,9 +495,6 @@ namespace ClientRESTAPI
         private System.Windows.Forms.Button buscarIdCompra;
         private System.Windows.Forms.TextBox campoBuscar2;
         private System.Windows.Forms.TextBox campoBuscar1;
-        private System.Windows.Forms.Button NavegadorButton;
-        private System.Windows.Forms.Button adobeButton;
-        private System.Windows.Forms.Button notepadButton;
         private System.Windows.Forms.Button modCompraButton;
         private System.Windows.Forms.Button eliminarCompraButton;
         private System.Windows.Forms.Button buscarFechaYhora;
