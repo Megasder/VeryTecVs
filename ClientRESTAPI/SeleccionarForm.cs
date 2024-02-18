@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClientRESTAPI.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace ClientRESTAPI
         public SeleccionarForm()
         {
             InitializeComponent();
+            if (Settings.Default.Rol == 0)
+            {
+                iconButton3.Visible = false;
+                iconButton4.Visible = false;
+                iconButton5.Visible = false;
+            }
         }
 
         private void adminUsuButton_Click(object sender, EventArgs e)
@@ -37,6 +44,7 @@ namespace ClientRESTAPI
 
         private void button2_Click(object sender, EventArgs e)
         {
+
             ClienteForm cliform = new ClienteForm();
 
             cliform.Show();
@@ -81,6 +89,18 @@ namespace ClientRESTAPI
         {
             InicioSesionForm isform = new InicioSesionForm();
             isform.Show();
+            this.Hide();
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            CompraForm compform = new CompraForm();
+            compform.Show();
             this.Hide();
         }
     }

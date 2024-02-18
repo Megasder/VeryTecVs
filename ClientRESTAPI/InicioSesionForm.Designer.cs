@@ -42,14 +42,14 @@ namespace ClientRESTAPI
             // loginButton
             // 
             this.loginButton.AutoSize = true;
-            this.loginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.loginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.loginButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.loginButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.loginButton.FlatAppearance.BorderSize = 2;
             this.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.loginButton.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginButton.ForeColor = System.Drawing.Color.White;
-            this.loginButton.Location = new System.Drawing.Point(472, 563);
+            this.loginButton.Location = new System.Drawing.Point(475, 621);
             this.loginButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(218, 48);
@@ -61,16 +61,17 @@ namespace ClientRESTAPI
             // passCrdentialsTextBox
             // 
             this.passCrdentialsTextBox.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passCrdentialsTextBox.Location = new System.Drawing.Point(576, 488);
+            this.passCrdentialsTextBox.Location = new System.Drawing.Point(576, 549);
             this.passCrdentialsTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.passCrdentialsTextBox.Name = "passCrdentialsTextBox";
+            this.passCrdentialsTextBox.PasswordChar = '*';
             this.passCrdentialsTextBox.Size = new System.Drawing.Size(205, 31);
             this.passCrdentialsTextBox.TabIndex = 2;
             // 
             // usucredentialsTextBox
             // 
             this.usucredentialsTextBox.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usucredentialsTextBox.Location = new System.Drawing.Point(576, 423);
+            this.usucredentialsTextBox.Location = new System.Drawing.Point(576, 478);
             this.usucredentialsTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.usucredentialsTextBox.Name = "usucredentialsTextBox";
             this.usucredentialsTextBox.Size = new System.Drawing.Size(205, 31);
@@ -80,26 +81,26 @@ namespace ClientRESTAPI
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(387, 425);
+            this.label1.Location = new System.Drawing.Point(423, 482);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 27);
+            this.label1.Size = new System.Drawing.Size(60, 27);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Usuario:";
+            this.label1.Text = "DNI:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(387, 489);
+            this.label2.Location = new System.Drawing.Point(385, 553);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(138, 27);
@@ -110,12 +111,13 @@ namespace ClientRESTAPI
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.ImageLocation = "fisio.png";
+            this.pictureBox1.ImageLocation = "verytec.png";
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(416, 18);
+            this.pictureBox1.Location = new System.Drawing.Point(416, 44);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(346, 366);
+            this.pictureBox1.Size = new System.Drawing.Size(346, 320);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.WaitOnLoad = true;
@@ -131,7 +133,7 @@ namespace ClientRESTAPI
             this.registroPageButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.registroPageButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.registroPageButton.Font = new System.Drawing.Font("Gadugi", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.registroPageButton.Location = new System.Drawing.Point(456, 632);
+            this.registroPageButton.Location = new System.Drawing.Point(459, 692);
             this.registroPageButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.registroPageButton.Name = "registroPageButton";
             this.registroPageButton.Size = new System.Drawing.Size(252, 46);
@@ -148,8 +150,8 @@ namespace ClientRESTAPI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(211)))), ((int)(((byte)(239)))));
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.ClientSize = new System.Drawing.Size(1179, 816);
             this.Controls.Add(this.registroPageButton);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);

@@ -54,5 +54,10 @@ namespace ClientRESTAPI
         {
 
         }
+
+        private void buttonBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 namespace ClientRESTAPI
 {
     [Serializable]
-    internal class Producto
+    public class Producto
     {
-        public long id_producto { get; set; }
+        public long idProducto { get; set; }
         public string nombre { get; set; }
         public string categoria { get; set; }
         public float precio { get; set; }
@@ -17,5 +17,6 @@ namespace ClientRESTAPI
         public int descuento { get; set; }
 
         public int cantidad { get; set; }
+
     }
 }

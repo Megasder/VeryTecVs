@@ -37,16 +37,14 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.NavegadorButton = new System.Windows.Forms.Button();
             this.eliminarButton = new System.Windows.Forms.Button();
-            this.adobeButton = new System.Windows.Forms.Button();
             this.nombreTextBox = new System.Windows.Forms.TextBox();
-            this.notepadButton = new System.Windows.Forms.Button();
-            this.numIdColTextBox = new System.Windows.Forms.TextBox();
             this.descripcionTextBox = new System.Windows.Forms.TextBox();
             this.EmailTextBox = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.RolBox = new System.Windows.Forms.ComboBox();
             this.campo1 = new System.Windows.Forms.TextBox();
+            this.rolBuscarButton = new System.Windows.Forms.Button();
             this.dniBuscarButton = new System.Windows.Forms.Button();
             this.buscaNombreButton = new System.Windows.Forms.Button();
             this.buscaApellidosButton = new System.Windows.Forms.Button();
@@ -56,7 +54,6 @@
             this.telefonoTextBox = new System.Windows.Forms.TextBox();
             this.direccionTextBox = new System.Windows.Forms.TextBox();
             this.modificarButton = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.dniTextBox = new System.Windows.Forms.TextBox();
@@ -75,10 +72,12 @@
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel4 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripLabel5 = new System.Windows.Forms.ToolStripLabel();
             this.labelUsuarios = new System.Windows.Forms.Label();
-            this.buttonAtras = new FontAwesome.Sharp.IconButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.buttonAtras = new FontAwesome.Sharp.IconButton();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -88,7 +87,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -107,19 +106,14 @@
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.rolComboBox);
             this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.NavegadorButton);
             this.groupBox1.Controls.Add(this.eliminarButton);
-            this.groupBox1.Controls.Add(this.adobeButton);
             this.groupBox1.Controls.Add(this.nombreTextBox);
-            this.groupBox1.Controls.Add(this.notepadButton);
-            this.groupBox1.Controls.Add(this.numIdColTextBox);
             this.groupBox1.Controls.Add(this.descripcionTextBox);
             this.groupBox1.Controls.Add(this.EmailTextBox);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.telefonoTextBox);
             this.groupBox1.Controls.Add(this.direccionTextBox);
             this.groupBox1.Controls.Add(this.modificarButton);
-            this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.dniTextBox);
@@ -170,7 +164,7 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox2.Size = new System.Drawing.Size(550, 254);
+            this.groupBox2.Size = new System.Drawing.Size(844, 254);
             this.groupBox2.TabIndex = 44;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Buscador avanzado";
@@ -179,7 +173,7 @@
             // 
             this.campo3.BackColor = System.Drawing.Color.White;
             this.campo3.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campo3.Location = new System.Drawing.Point(312, 52);
+            this.campo3.Location = new System.Drawing.Point(401, 52);
             this.campo3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.campo3.Name = "campo3";
             this.campo3.Size = new System.Drawing.Size(166, 31);
@@ -199,15 +193,15 @@
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(190, 180);
+            this.button6.Location = new System.Drawing.Point(228, 189);
             this.button6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(164, 55);
+            this.button6.Size = new System.Drawing.Size(245, 55);
             this.button6.TabIndex = 25;
             this.button6.TabStop = false;
             this.button6.Text = "Nombre y rol";
@@ -217,12 +211,12 @@
             // button9
             // 
             this.button9.AutoSize = true;
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.button9.FlatAppearance.BorderSize = 0;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Location = new System.Drawing.Point(312, 111);
+            this.button9.Location = new System.Drawing.Point(401, 111);
             this.button9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(300, 55);
@@ -234,7 +228,7 @@
             // 
             // button10
             // 
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.button10.FlatAppearance.BorderSize = 0;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -249,25 +243,9 @@
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
-            // NavegadorButton
-            // 
-            this.NavegadorButton.BackColor = System.Drawing.Color.Transparent;
-            this.NavegadorButton.FlatAppearance.BorderSize = 0;
-            this.NavegadorButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.NavegadorButton.Image = global::ClientRESTAPI.Properties.Resources.chrome1;
-            this.NavegadorButton.Location = new System.Drawing.Point(735, 808);
-            this.NavegadorButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.NavegadorButton.Name = "NavegadorButton";
-            this.NavegadorButton.Size = new System.Drawing.Size(112, 108);
-            this.NavegadorButton.TabIndex = 28;
-            this.NavegadorButton.TabStop = false;
-            this.NavegadorButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.NavegadorButton.UseVisualStyleBackColor = false;
-            this.NavegadorButton.Click += new System.EventHandler(this.NavegadorButton_Click);
-            // 
             // eliminarButton
             // 
-            this.eliminarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.eliminarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.eliminarButton.FlatAppearance.BorderSize = 0;
             this.eliminarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.eliminarButton.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -281,21 +259,6 @@
             this.eliminarButton.UseVisualStyleBackColor = false;
             this.eliminarButton.Click += new System.EventHandler(this.eliminarButton_Click);
             // 
-            // adobeButton
-            // 
-            this.adobeButton.BackColor = System.Drawing.Color.Transparent;
-            this.adobeButton.FlatAppearance.BorderSize = 0;
-            this.adobeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.adobeButton.Image = global::ClientRESTAPI.Properties.Resources.adobe1;
-            this.adobeButton.Location = new System.Drawing.Point(735, 658);
-            this.adobeButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.adobeButton.Name = "adobeButton";
-            this.adobeButton.Size = new System.Drawing.Size(112, 108);
-            this.adobeButton.TabIndex = 27;
-            this.adobeButton.TabStop = false;
-            this.adobeButton.UseVisualStyleBackColor = false;
-            this.adobeButton.Click += new System.EventHandler(this.adobeButton_Click);
-            // 
             // nombreTextBox
             // 
             this.nombreTextBox.BackColor = System.Drawing.Color.White;
@@ -306,32 +269,6 @@
             this.nombreTextBox.Size = new System.Drawing.Size(148, 31);
             this.nombreTextBox.TabIndex = 1;
             this.nombreTextBox.TextChanged += new System.EventHandler(this.nombreTextBox_TextChanged);
-            // 
-            // notepadButton
-            // 
-            this.notepadButton.BackColor = System.Drawing.Color.Transparent;
-            this.notepadButton.FlatAppearance.BorderSize = 0;
-            this.notepadButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.notepadButton.Image = global::ClientRESTAPI.Properties.Resources.notepad;
-            this.notepadButton.Location = new System.Drawing.Point(735, 523);
-            this.notepadButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.notepadButton.Name = "notepadButton";
-            this.notepadButton.Size = new System.Drawing.Size(112, 97);
-            this.notepadButton.TabIndex = 26;
-            this.notepadButton.TabStop = false;
-            this.notepadButton.UseVisualStyleBackColor = false;
-            this.notepadButton.Click += new System.EventHandler(this.notepadButton_Click);
-            // 
-            // numIdColTextBox
-            // 
-            this.numIdColTextBox.BackColor = System.Drawing.Color.White;
-            this.numIdColTextBox.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numIdColTextBox.Location = new System.Drawing.Point(338, 315);
-            this.numIdColTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.numIdColTextBox.Name = "numIdColTextBox";
-            this.numIdColTextBox.Size = new System.Drawing.Size(148, 31);
-            this.numIdColTextBox.TabIndex = 9;
-            this.numIdColTextBox.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // descripcionTextBox
             // 
@@ -358,7 +295,9 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.RolBox);
             this.groupBox3.Controls.Add(this.campo1);
+            this.groupBox3.Controls.Add(this.rolBuscarButton);
             this.groupBox3.Controls.Add(this.dniBuscarButton);
             this.groupBox3.Controls.Add(this.buscaNombreButton);
             this.groupBox3.Controls.Add(this.buscaApellidosButton);
@@ -370,11 +309,24 @@
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox3.Size = new System.Drawing.Size(550, 249);
+            this.groupBox3.Size = new System.Drawing.Size(844, 249);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Buscador simple";
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
+            // 
+            // RolBox
+            // 
+            this.RolBox.FormattingEnabled = true;
+            this.RolBox.Items.AddRange(new object[] {
+            "Normal",
+            "Admin",
+            "SuperAdmin"});
+            this.RolBox.Location = new System.Drawing.Point(638, 52);
+            this.RolBox.Name = "RolBox";
+            this.RolBox.Size = new System.Drawing.Size(148, 32);
+            this.RolBox.TabIndex = 46;
+            this.RolBox.Text = "Normal";
             // 
             // campo1
             // 
@@ -387,9 +339,27 @@
             this.campo1.TabIndex = 14;
             this.campo1.TabStop = false;
             // 
+            // rolBuscarButton
+            // 
+            this.rolBuscarButton.AutoSize = true;
+            this.rolBuscarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.rolBuscarButton.FlatAppearance.BorderSize = 0;
+            this.rolBuscarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rolBuscarButton.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rolBuscarButton.ForeColor = System.Drawing.Color.White;
+            this.rolBuscarButton.Location = new System.Drawing.Point(638, 125);
+            this.rolBuscarButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rolBuscarButton.Name = "rolBuscarButton";
+            this.rolBuscarButton.Size = new System.Drawing.Size(139, 38);
+            this.rolBuscarButton.TabIndex = 21;
+            this.rolBuscarButton.TabStop = false;
+            this.rolBuscarButton.Text = "Rol";
+            this.rolBuscarButton.UseVisualStyleBackColor = false;
+            this.rolBuscarButton.Click += new System.EventHandler(this.button2_Click);
+            // 
             // dniBuscarButton
             // 
-            this.dniBuscarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.dniBuscarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.dniBuscarButton.FlatAppearance.BorderSize = 0;
             this.dniBuscarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dniBuscarButton.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -406,7 +376,7 @@
             // 
             // buscaNombreButton
             // 
-            this.buscaNombreButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.buscaNombreButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.buscaNombreButton.FlatAppearance.BorderSize = 0;
             this.buscaNombreButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buscaNombreButton.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -423,7 +393,7 @@
             // 
             // buscaApellidosButton
             // 
-            this.buscaApellidosButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.buscaApellidosButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.buscaApellidosButton.FlatAppearance.BorderSize = 0;
             this.buscaApellidosButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buscaApellidosButton.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -440,12 +410,12 @@
             // 
             // emailBuscarButton
             // 
-            this.emailBuscarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.emailBuscarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.emailBuscarButton.FlatAppearance.BorderSize = 0;
             this.emailBuscarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.emailBuscarButton.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailBuscarButton.ForeColor = System.Drawing.Color.White;
-            this.emailBuscarButton.Location = new System.Drawing.Point(110, 189);
+            this.emailBuscarButton.Location = new System.Drawing.Point(128, 189);
             this.emailBuscarButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.emailBuscarButton.Name = "emailBuscarButton";
             this.emailBuscarButton.Size = new System.Drawing.Size(112, 38);
@@ -458,15 +428,15 @@
             // numIdColBuscarButton
             // 
             this.numIdColBuscarButton.AutoSize = true;
-            this.numIdColBuscarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.numIdColBuscarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.numIdColBuscarButton.FlatAppearance.BorderSize = 0;
             this.numIdColBuscarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.numIdColBuscarButton.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numIdColBuscarButton.ForeColor = System.Drawing.Color.White;
-            this.numIdColBuscarButton.Location = new System.Drawing.Point(308, 189);
+            this.numIdColBuscarButton.Location = new System.Drawing.Point(306, 189);
             this.numIdColBuscarButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.numIdColBuscarButton.Name = "numIdColBuscarButton";
-            this.numIdColBuscarButton.Size = new System.Drawing.Size(232, 52);
+            this.numIdColBuscarButton.Size = new System.Drawing.Size(155, 38);
             this.numIdColBuscarButton.TabIndex = 20;
             this.numIdColBuscarButton.TabStop = false;
             this.numIdColBuscarButton.Text = "NumIdColegio";
@@ -475,7 +445,7 @@
             // 
             // direccionBuscarButton
             // 
-            this.direccionBuscarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.direccionBuscarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.direccionBuscarButton.FlatAppearance.BorderSize = 0;
             this.direccionBuscarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.direccionBuscarButton.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -515,7 +485,7 @@
             // 
             // modificarButton
             // 
-            this.modificarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.modificarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.modificarButton.FlatAppearance.BorderSize = 0;
             this.modificarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.modificarButton.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -528,18 +498,6 @@
             this.modificarButton.Text = "Modificar";
             this.modificarButton.UseVisualStyleBackColor = false;
             this.modificarButton.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(9, 320);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(329, 21);
-            this.label11.TabIndex = 11;
-            this.label11.Text = "Número de identificación del colegio:";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label10
             // 
@@ -686,7 +644,7 @@
             // 
             // toolStrip1
             // 
-            this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Left;
             this.toolStrip1.Font = new System.Drawing.Font("Gadugi", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
@@ -694,8 +652,7 @@
             this.toolStripLabel1,
             this.toolStripLabel2,
             this.toolStripLabel3,
-            this.toolStripLabel4,
-            this.toolStripLabel5});
+            this.toolStripLabel4});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
@@ -719,7 +676,7 @@
             this.toolStripLabel2.Margin = new System.Windows.Forms.Padding(0, 1, 0, 25);
             this.toolStripLabel2.Name = "toolStripLabel2";
             this.toolStripLabel2.Size = new System.Drawing.Size(101, 24);
-            this.toolStripLabel2.Text = "Empresas";
+            this.toolStripLabel2.Text = "Productos";
             this.toolStripLabel2.Click += new System.EventHandler(this.toolStripLabel2_Click);
             // 
             // toolStripLabel3
@@ -728,31 +685,21 @@
             this.toolStripLabel3.Margin = new System.Windows.Forms.Padding(0, 1, 0, 25);
             this.toolStripLabel3.Name = "toolStripLabel3";
             this.toolStripLabel3.Size = new System.Drawing.Size(101, 24);
-            this.toolStripLabel3.Text = "Productos";
+            this.toolStripLabel3.Text = "Empresas";
             this.toolStripLabel3.Click += new System.EventHandler(this.toolStripLabel3_Click);
             // 
             // toolStripLabel4
             // 
             this.toolStripLabel4.ForeColor = System.Drawing.Color.White;
-            this.toolStripLabel4.Margin = new System.Windows.Forms.Padding(0, 1, 0, 25);
             this.toolStripLabel4.Name = "toolStripLabel4";
             this.toolStripLabel4.Size = new System.Drawing.Size(101, 24);
             this.toolStripLabel4.Text = "Compras";
             this.toolStripLabel4.Click += new System.EventHandler(this.toolStripLabel4_Click);
             // 
-            // toolStripLabel5
-            // 
-            this.toolStripLabel5.ForeColor = System.Drawing.Color.White;
-            this.toolStripLabel5.Margin = new System.Windows.Forms.Padding(0, 1, 0, 25);
-            this.toolStripLabel5.Name = "toolStripLabel5";
-            this.toolStripLabel5.Size = new System.Drawing.Size(101, 24);
-            this.toolStripLabel5.Text = "Reservas";
-            this.toolStripLabel5.Click += new System.EventHandler(this.toolStripLabel5_Click);
-            // 
             // labelUsuarios
             // 
             this.labelUsuarios.AutoSize = true;
-            this.labelUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.labelUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.labelUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelUsuarios.Font = new System.Drawing.Font("Gadugi", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUsuarios.ForeColor = System.Drawing.Color.White;
@@ -762,25 +709,6 @@
             this.labelUsuarios.Size = new System.Drawing.Size(246, 65);
             this.labelUsuarios.TabIndex = 45;
             this.labelUsuarios.Text = "Usuarios";
-            // 
-            // buttonAtras
-            // 
-            this.buttonAtras.BackColor = System.Drawing.Color.Transparent;
-            this.buttonAtras.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonAtras.FlatAppearance.BorderSize = 0;
-            this.buttonAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAtras.Font = new System.Drawing.Font("Gadugi", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAtras.ForeColor = System.Drawing.Color.White;
-            this.buttonAtras.IconChar = FontAwesome.Sharp.IconChar.LongArrowAltLeft;
-            this.buttonAtras.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
-            this.buttonAtras.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.buttonAtras.Location = new System.Drawing.Point(148, 71);
-            this.buttonAtras.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.buttonAtras.Name = "buttonAtras";
-            this.buttonAtras.Size = new System.Drawing.Size(57, 62);
-            this.buttonAtras.TabIndex = 56;
-            this.buttonAtras.UseVisualStyleBackColor = false;
-            this.buttonAtras.Click += new System.EventHandler(this.buttonAtras_Click);
             // 
             // dataGridView1
             // 
@@ -792,12 +720,88 @@
             this.dataGridView1.Size = new System.Drawing.Size(674, 532);
             this.dataGridView1.TabIndex = 57;
             // 
+            // buttonAtras
+            // 
+            this.buttonAtras.BackColor = System.Drawing.Color.Transparent;
+            this.buttonAtras.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonAtras.FlatAppearance.BorderSize = 0;
+            this.buttonAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAtras.Font = new System.Drawing.Font("Gadugi", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAtras.ForeColor = System.Drawing.Color.White;
+            this.buttonAtras.IconChar = FontAwesome.Sharp.IconChar.LongArrowAltLeft;
+            this.buttonAtras.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.buttonAtras.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.buttonAtras.Location = new System.Drawing.Point(148, 71);
+            this.buttonAtras.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonAtras.Name = "buttonAtras";
+            this.buttonAtras.Size = new System.Drawing.Size(57, 62);
+            this.buttonAtras.TabIndex = 56;
+            this.buttonAtras.UseVisualStyleBackColor = false;
+            this.buttonAtras.Click += new System.EventHandler(this.buttonAtras_Click);
+            // 
+            // button4
+            // 
+            this.button4.AutoSize = true;
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(1526, 773);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button4.Name = "button4";
+            this.button4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button4.Size = new System.Drawing.Size(194, 50);
+            this.button4.TabIndex = 62;
+            this.button4.Text = "Eliminar";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
+            // 
+            // button3
+            // 
+            this.button3.AutoSize = true;
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(1293, 773);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button3.Name = "button3";
+            this.button3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button3.Size = new System.Drawing.Size(194, 50);
+            this.button3.TabIndex = 63;
+            this.button3.Text = "Actualizar";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
+            // button2
+            // 
+            this.button2.AutoSize = true;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(1069, 773);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button2.Name = "button2";
+            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button2.Size = new System.Drawing.Size(194, 50);
+            this.button2.TabIndex = 64;
+            this.button2.Text = "Modificar";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
             // UsuarioForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(211)))), ((int)(((byte)(239)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(1745, 1169);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.buttonAtras);
             this.Controls.Add(this.labelUsuarios);
@@ -837,8 +841,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox passwordTextBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox numIdColTextBox;
         private System.Windows.Forms.TextBox EmailTextBox;
         private System.Windows.Forms.TextBox telefonoTextBox;
         private System.Windows.Forms.TextBox dniTextBox;
@@ -855,15 +857,10 @@
         private System.Windows.Forms.Button modificarButton;
         private System.Windows.Forms.Button eliminarButton;
         private System.Windows.Forms.TextBox descripcionTextBox;
-        private System.Windows.Forms.Button notepadButton;
-        private System.Windows.Forms.Button NavegadorButton;
-        private System.Windows.Forms.Button adobeButton;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.ToolStripLabel toolStripLabel3;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel4;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel5;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox campo2;
         private System.Windows.Forms.Button button6;
@@ -874,6 +871,12 @@
         private FontAwesome.Sharp.IconButton buttonAtras;
         private System.Windows.Forms.ComboBox rolComboBox;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox RolBox;
+        private System.Windows.Forms.Button rolBuscarButton;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel4;
     }
 }
 

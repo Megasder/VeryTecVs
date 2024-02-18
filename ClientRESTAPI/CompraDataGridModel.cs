@@ -6,15 +6,17 @@ using System.Threading.Tasks;
 
 namespace ClientRESTAPI
 {
-    [Serializable]
-    class Compra
+    internal class CompraDataGridModel
     {
-        public long id_compra { get; set; }
+        public long id {  get; set; }
         public string fecha { get; set; }
         public string hora { get; set; }
         public int cantidad { get; set; }
 
-        public Cliente cliente { get; set; }
-        public Producto producto { get; set; }
+        public string clienteDni { get; set; }
+        public string productoNom { get; set; }
+
+        public string productoCat { get; set; }
+
     }
 }

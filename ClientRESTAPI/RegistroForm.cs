@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -37,7 +38,7 @@ namespace ClientRESTAPI
         private void loginPageButton_MouseExit(object sender, EventArgs e)
         {
             loginPageButton.ForeColor = System.Drawing.Color.Black;
-            loginPageButton.BackColor = System.Drawing.Color.FromArgb(146, 211, 239);
+            loginPageButton.BackColor = System.Drawing.Color.FromArgb(255, 192, 128);
         }
 
         private void button2_MouseDown(object sender, MouseEventArgs e)
@@ -47,51 +48,56 @@ namespace ClientRESTAPI
 
         private void registroButton_Click(object sender, EventArgs e)
         {
-            {
-
-                String pass = campoPassword.Text;
-                String telefono = campoTelefono.Text;
-                String nombre = campoNombre.Text;
-                String apellidos = campoApellidos.Text;
-                String dni = campoDNI.Text;
-                String email = campoEmail.Text;
- 
-
+            String dni = campoDNI.Text;
+            String nombre = campoNombre.Text;
+            String apellidos = campoApellidos.Text;
+            int telefono = Int32.Parse(campoTelefono.Text);
+            String email = campoEmail.Text;
+            String password = campoPassword.Text;
+            String password2 = campoPassword2.Text;
+            String historial = campoHistorial.Text;
 
 
+            String url = "http://localhost:8081/clienteAdd/";
+            String url2 = "http://localhost:8081/clienteDni/" + dni;
+            String url3 = "http://localhost:8081/usuarioDni/" + dni;
 
-                String url = "http://localhost:8081/usuarioAdd/";
+            RestClient r = new RestClient(url, "POST");
+            RestClient c = new RestClient(url2, "GET");
+            RestClient u = new RestClient(url3, "GET");
 
-                RestClient r = new RestClient(url, "POST");
-
-                String datos = "{" + "\"password\" : \"" +
-                    pass + "\", " + "\"nombre\" : \"" +
-                    nombre + "\"," + "\"apellidos\" : \"" +
-                    apellidos + "\"," + "\"dni\" : \"" +
-                    dni + "\"," + "\"telefono\" : \"" +
-                    telefono + "\"," + "\"email\" : \"" +
-                    email + "\" " +
+            String datos = "{" +
+                "\"dni\" : \"" + dni + "\", " +
+                "\"nombre\" : \"" + nombre + "\"," +
+                "\"apellidos\" : \"" + apellidos + "\"," +
+                "\"telefono\" : \"" + telefono + "\"," +
+                "\"email\" : \"" + email + "\"," +
+                "\"password\" : \"" + password + "\"," +
+                "\"historial\" : \"" + historial + "\" " +
                 "}";
 
 
-                bool IsValidEmail(string strMail)
-                {
-                    return Regex.IsMatch(strMail, @"^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$");
-                }
+            bool IsValidEmail(string strMail)
+            {
+                return Regex.IsMatch(strMail, @"^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$");
+            }
 
-                bool IsValidDni(string strDni)
-                {
-                    return Regex.IsMatch(strDni, "^(([A-Z]\\d{8})|(\\d{8}[A-Z]))$");
-                }
+            bool IsValidDni(string strDni)
+            {
+                return Regex.IsMatch(strDni, "^(([A-Z]\\d{8})|(\\d{8}[A-Z]))$");
+            }
 
-
+            String cliGet = c.getItem();
+            String usuGet = u.getItem();
+            if (cliGet is null && usuGet is null)
+            {
                 if (campoPassword.TextLength < 6)
                 {
                     MessageBox.Show("No se ha podido crear el usuario, la contraseña debe ser mas grande que 6 caracteres");
                 }
                 else if (IsValidEmail(campoEmail.Text) == false)
                 {
-                    MessageBox.Show("No se ha podido crear el usuario, el email no es valido");
+                    MessageBox.Show("No se ha podido crear el usuario, el email no es valido.");
                 }
                 else if (campoNombre.Text.Any(char.IsDigit) == true || campoApellidos.Text.Any(char.IsDigit) == true)
                 {
@@ -105,6 +111,17 @@ namespace ClientRESTAPI
                 {
                     MessageBox.Show("No se ha podido crear el usuario, el telefono debe ser de tamaño entre 9 y 11 y solo contener numeros ");
                 }
+                else if (!campoPassword.Text.Equals(campoPassword2.Text))
+                {
+                    MessageBox.Show("No se ha podido crear el usuario, las contraseñas que has escrito no coinciden");
+                    campoPassword.Clear();
+                    campoPassword2.Clear();
+                }
+                else if (campoDNI == null || campoNombre == null || campoApellidos == null || campoTelefono == null || campoEmail == null || campoPassword == null || campoPassword2 == null ||
+                    campoDNI.Text.Equals("") || campoNombre.Text.Equals("") || campoApellidos.Text.Equals("") || campoTelefono.Text.Equals("") || campoEmail.Text.Equals("") || campoPassword.Text.Equals("") || campoPassword2.Text.Equals(""))
+                {
+                    MessageBox.Show("Falta algun dato, comprueba que has completado todos los campos obligatorios");
+                }
                 else
                 {
                     String res = r.postItem(datos);
@@ -117,6 +134,24 @@ namespace ClientRESTAPI
                     this.Hide();
                 }
             }
+            else
+            {
+                if (cliGet is null)
+                {
+                 MessageBox.Show("No se ha podido crear el cliente, un Usuario ya usa el DNI");
+
+                } else
+                {
+                 MessageBox.Show("No se ha podido crear el cliente, un Cliente ya usa el DNI");
+                }
+
+            }
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -12,7 +12,19 @@ namespace ClientRESTAPI
         public EmpresaForm()
         {
             InitializeComponent();
+            actualizar();
+        }
 
+        private void actualizar()
+        {
+            String url = "http://localhost:8081/empresaNombre/";
+            RestClient r = new RestClient(url, "GET");
+
+            String respuesta = r.getItem();
+
+            var listempr = JsonConvert.DeserializeObject<List<Empresa>>(respuesta);
+
+            dataGridView1.DataSource = listempr;
         }
 
         private void EmpresaForm_Load(object sender, EventArgs e)
@@ -56,6 +68,7 @@ namespace ClientRESTAPI
             {
                 String res = r.postItem(datos);
                 MessageBox.Show("Empresa creada con exito");
+                actualizar();
             }
             else
             {
@@ -68,6 +81,7 @@ namespace ClientRESTAPI
             }
         }
 
+        
         private void modEmpresaButton_Click_1(object sender, EventArgs e)
         {
             string cif_put = cif.Text;
@@ -104,10 +118,8 @@ namespace ClientRESTAPI
                 MessageBox.Show("Empresa modificada con éxito");
 
                 CleanForm();
+                actualizar();
 
-            }
-            else
-            {
             }
         }
 
@@ -130,11 +142,9 @@ namespace ClientRESTAPI
                 MessageBox.Show("Empresa eliminada con éxito");
 
                 CleanForm();
+                actualizar();
 
 
-            }
-            else
-            {
             }
         }
         private void getCif_Click_1(object sender, EventArgs e)
@@ -474,7 +484,7 @@ namespace ClientRESTAPI
 
         private void toolStripLabel2_Click(object sender, EventArgs e)
         {
-            ProductoForm sfEmp = new ProductoForm();
+            UsuarioForm sfEmp = new UsuarioForm();
 
             sfEmp.Show();
 
@@ -483,7 +493,7 @@ namespace ClientRESTAPI
 
         private void toolStripLabel3_Click(object sender, EventArgs e)
         {
-            UsuarioForm sfEmp = new UsuarioForm();
+            ProductoForm sfEmp = new ProductoForm();
 
             sfEmp.Show();
 
@@ -541,6 +551,81 @@ namespace ClientRESTAPI
             {
                 e.Handled = true;
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i <= dataGridView1.Rows.Count - 1; ++i)
+            {
+
+                String cif_put = dataGridView1.Rows[i].Cells[0].Value.ToString();
+                String nombre_put = dataGridView1.Rows[i].Cells[1].Value.ToString();
+                String web_put = dataGridView1.Rows[i].Cells[2].Value.ToString();
+                int telefono_put = Int32.Parse(dataGridView1.Rows[i].Cells[3].Value.ToString());
+                String email_put = dataGridView1.Rows[i].Cells[4].Value.ToString();
+                String direccion_put = dataGridView1.Rows[i].Cells[5].Value.ToString();
+                String actividad_put = dataGridView1.Rows[i].Cells[6].Value.ToString();
+
+                String url = "http://localhost:8081/empresaMod/" + cif_put;
+
+                RestClient r = new RestClient(url, "PUT");
+
+                String datosPost = "{" +
+                    "\"cif\" : \"" + cif_put + "\", " +
+                    "\"nombre\" : \"" + nombre_put + "\", " +
+                    "\"web\" : \"" + web_put + "\", " +
+                    "\"telefono\" : \"" + telefono_put + "\", " +
+                    "\"email\" : \"" + email_put + "\", " +
+                    "\"direccion\" : \"" + direccion_put + "\", " +
+                    "\"actividad\" : \"" + actividad_put + "\" " +
+                    "}";
+            }
+
+            MessageBox.Show("Productos modificado con éxito");
+            actualizar();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            String url = "http://localhost:8081/empresaNombre/";
+            RestClient r = new RestClient(url, "GET");
+
+            String respuesta = r.getItem();
+
+            var listempr = JsonConvert.DeserializeObject<List<Empresa>>(respuesta);
+
+            dataGridView1.DataSource = listempr;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            int row = dataGridView1.CurrentCell.RowIndex;
+            String id_del= dataGridView1.Rows[row].Cells[0].Value.ToString();
+
+            String url = "http://localhost:8081/empresaDel/" + id_del;
+
+            RestClient r = new RestClient(url, "DELETE");
+
+            var confirmResult = MessageBox.Show("Estás seguro de que deseas eliminar esta empresa",
+                                      "Diálogo de confirmación",
+                                      MessageBoxButtons.OKCancel);
+            if (confirmResult == DialogResult.OK)
+            {
+
+                String resDel = r.deleteItem();
+
+                MessageBox.Show("Empresa eliminada con éxito");
+
+                CleanForm();
+                actualizar();
+
+
+            }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 

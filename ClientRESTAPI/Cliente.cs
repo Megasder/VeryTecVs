@@ -16,5 +16,7 @@ namespace ClientRESTAPI
         public string email { get; set; }
         public string password { get; set; }
         public string historial { get; set; }
+
+        public float dinero { get; set; }
     }
 }

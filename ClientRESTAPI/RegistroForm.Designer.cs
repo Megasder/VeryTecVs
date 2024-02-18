@@ -44,6 +44,10 @@ namespace ClientRESTAPI
             this.campoPassword = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.campoTelefono = new System.Windows.Forms.TextBox();
+            this.campoHistorial = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.campoPassword2 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,12 +55,13 @@ namespace ClientRESTAPI
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.ImageLocation = "fisioRedimensionado.png";
+            this.pictureBox1.ImageLocation = "verytec.png";
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(474, 18);
+            this.pictureBox1.Location = new System.Drawing.Point(442, 14);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(230, 235);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.WaitOnLoad = true;
@@ -64,18 +69,18 @@ namespace ClientRESTAPI
             // registroButton
             // 
             this.registroButton.AutoSize = true;
-            this.registroButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.registroButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.registroButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.registroButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.registroButton.FlatAppearance.BorderSize = 2;
             this.registroButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.registroButton.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.registroButton.ForeColor = System.Drawing.Color.White;
-            this.registroButton.Location = new System.Drawing.Point(463, 674);
+            this.registroButton.Location = new System.Drawing.Point(473, 798);
             this.registroButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.registroButton.Name = "registroButton";
             this.registroButton.Size = new System.Drawing.Size(218, 48);
-            this.registroButton.TabIndex = 6;
+            this.registroButton.TabIndex = 9;
             this.registroButton.Text = "Registrarse";
             this.registroButton.UseVisualStyleBackColor = false;
             this.registroButton.Click += new System.EventHandler(this.registroButton_Click);
@@ -90,11 +95,11 @@ namespace ClientRESTAPI
             this.loginPageButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.loginPageButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.loginPageButton.Font = new System.Drawing.Font("Gadugi", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginPageButton.Location = new System.Drawing.Point(403, 744);
+            this.loginPageButton.Location = new System.Drawing.Point(413, 868);
             this.loginPageButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.loginPageButton.Name = "loginPageButton";
             this.loginPageButton.Size = new System.Drawing.Size(332, 46);
-            this.loginPageButton.TabIndex = 7;
+            this.loginPageButton.TabIndex = 10;
             this.loginPageButton.TabStop = false;
             this.loginPageButton.Text = "Ya eres usuario? Inicia sesión";
             this.loginPageButton.UseVisualStyleBackColor = false;
@@ -106,149 +111,201 @@ namespace ClientRESTAPI
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(398, 282);
+            this.label1.Location = new System.Drawing.Point(415, 458);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 27);
+            this.label1.Size = new System.Drawing.Size(116, 27);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Nombre:";
+            this.label1.Text = "*Nombre:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(398, 332);
+            this.label2.Location = new System.Drawing.Point(408, 508);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 27);
+            this.label2.Size = new System.Drawing.Size(129, 27);
             this.label2.TabIndex = 10;
-            this.label2.Text = "Apellidos:";
+            this.label2.Text = "*Apellidos:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(398, 383);
+            this.label3.Location = new System.Drawing.Point(437, 408);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 27);
+            this.label3.Size = new System.Drawing.Size(70, 27);
             this.label3.TabIndex = 11;
-            this.label3.Text = "DNI:";
+            this.label3.Text = "*DNI:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(398, 434);
+            this.label4.Location = new System.Drawing.Point(420, 616);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 27);
+            this.label4.Size = new System.Drawing.Size(87, 27);
             this.label4.TabIndex = 12;
-            this.label4.Text = "Email:";
+            this.label4.Text = "*Email:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(398, 486);
+            this.label5.Location = new System.Drawing.Point(298, 673);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(138, 27);
+            this.label5.Size = new System.Drawing.Size(148, 27);
             this.label5.TabIndex = 13;
-            this.label5.Text = "Contraseña:";
+            this.label5.Text = "*Contraseña:";
             // 
             // campoNombre
             // 
             this.campoNombre.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campoNombre.Location = new System.Drawing.Point(558, 282);
+            this.campoNombre.Location = new System.Drawing.Point(568, 454);
             this.campoNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.campoNombre.Name = "campoNombre";
             this.campoNombre.Size = new System.Drawing.Size(205, 31);
-            this.campoNombre.TabIndex = 1;
+            this.campoNombre.TabIndex = 2;
             // 
             // campoApellidos
             // 
             this.campoApellidos.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campoApellidos.Location = new System.Drawing.Point(560, 331);
+            this.campoApellidos.Location = new System.Drawing.Point(568, 504);
             this.campoApellidos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.campoApellidos.Name = "campoApellidos";
             this.campoApellidos.Size = new System.Drawing.Size(205, 31);
-            this.campoApellidos.TabIndex = 2;
+            this.campoApellidos.TabIndex = 3;
             // 
             // campoDNI
             // 
             this.campoDNI.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campoDNI.Location = new System.Drawing.Point(558, 379);
+            this.campoDNI.Location = new System.Drawing.Point(568, 404);
             this.campoDNI.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.campoDNI.Name = "campoDNI";
             this.campoDNI.Size = new System.Drawing.Size(205, 31);
-            this.campoDNI.TabIndex = 3;
+            this.campoDNI.TabIndex = 1;
             // 
             // campoEmail
             // 
             this.campoEmail.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campoEmail.Location = new System.Drawing.Point(558, 430);
+            this.campoEmail.Location = new System.Drawing.Point(568, 612);
             this.campoEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.campoEmail.Name = "campoEmail";
             this.campoEmail.Size = new System.Drawing.Size(205, 31);
-            this.campoEmail.TabIndex = 4;
+            this.campoEmail.TabIndex = 5;
             // 
             // campoPassword
             // 
             this.campoPassword.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campoPassword.Location = new System.Drawing.Point(558, 482);
+            this.campoPassword.Location = new System.Drawing.Point(458, 669);
             this.campoPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.campoPassword.Name = "campoPassword";
+            this.campoPassword.PasswordChar = '*';
             this.campoPassword.Size = new System.Drawing.Size(205, 31);
-            this.campoPassword.TabIndex = 5;
+            this.campoPassword.TabIndex = 6;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label6.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(398, 538);
+            this.label6.Location = new System.Drawing.Point(408, 559);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(113, 27);
+            this.label6.Size = new System.Drawing.Size(123, 27);
             this.label6.TabIndex = 14;
-            this.label6.Text = "Telefono:";
+            this.label6.Text = "*Telefono:";
             // 
             // campoTelefono
             // 
             this.campoTelefono.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campoTelefono.Location = new System.Drawing.Point(558, 534);
+            this.campoTelefono.Location = new System.Drawing.Point(568, 555);
             this.campoTelefono.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.campoTelefono.Name = "campoTelefono";
             this.campoTelefono.Size = new System.Drawing.Size(205, 31);
-            this.campoTelefono.TabIndex = 15;
+            this.campoTelefono.TabIndex = 4;
+            // 
+            // campoHistorial
+            // 
+            this.campoHistorial.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.campoHistorial.Location = new System.Drawing.Point(568, 726);
+            this.campoHistorial.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.campoHistorial.Name = "campoHistorial";
+            this.campoHistorial.Size = new System.Drawing.Size(205, 31);
+            this.campoHistorial.TabIndex = 8;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label7.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(389, 725);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(150, 27);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Localizacion:";
+            // 
+            // campoPassword2
+            // 
+            this.campoPassword2.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.campoPassword2.Location = new System.Drawing.Point(683, 669);
+            this.campoPassword2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.campoPassword2.Name = "campoPassword2";
+            this.campoPassword2.PasswordChar = '*';
+            this.campoPassword2.Size = new System.Drawing.Size(205, 31);
+            this.campoPassword2.TabIndex = 7;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label8.Font = new System.Drawing.Font("Gadugi", 7.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(712, 815);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(99, 19);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "* Obligatorio";
             // 
             // RegistroForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(211)))), ((int)(((byte)(239)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(1200, 953);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.campoHistorial);
             this.Controls.Add(this.campoTelefono);
             this.Controls.Add(this.label6);
+            this.Controls.Add(this.campoPassword2);
             this.Controls.Add(this.campoPassword);
             this.Controls.Add(this.campoEmail);
             this.Controls.Add(this.campoDNI);
@@ -289,5 +346,9 @@ namespace ClientRESTAPI
         private System.Windows.Forms.TextBox campoPassword;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox campoTelefono;
+        private System.Windows.Forms.TextBox campoHistorial;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox campoPassword2;
+        private System.Windows.Forms.Label label8;
     }
 }

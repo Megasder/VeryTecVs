@@ -36,6 +36,8 @@ namespace ClientRESTAPI
             this.buscaNombreButton = new System.Windows.Forms.Button();
             this.buscarDNIButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dineroTextBox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.campo3 = new System.Windows.Forms.TextBox();
             this.nomyApeBuscaButton = new System.Windows.Forms.Button();
@@ -61,13 +63,15 @@ namespace ClientRESTAPI
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripLabel4 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripLabel5 = new System.Windows.Forms.ToolStripLabel();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.label4 = new System.Windows.Forms.Label();
             this.labelClientes = new System.Windows.Forms.Label();
-            this.buttonAtras = new FontAwesome.Sharp.IconButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.buttonAtras = new FontAwesome.Sharp.IconButton();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.toolStripLabel4 = new System.Windows.Forms.ToolStripLabel();
             this.BuscadorBox1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -77,7 +81,7 @@ namespace ClientRESTAPI
             // 
             // eliminarButton
             // 
-            this.eliminarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.eliminarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.eliminarButton.FlatAppearance.BorderSize = 0;
             this.eliminarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.eliminarButton.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -114,7 +118,7 @@ namespace ClientRESTAPI
             // 
             // historialBuscarButton
             // 
-            this.historialBuscarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.historialBuscarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.historialBuscarButton.FlatAppearance.BorderSize = 0;
             this.historialBuscarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.historialBuscarButton.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -130,7 +134,7 @@ namespace ClientRESTAPI
             // 
             // buscaNombreButton
             // 
-            this.buscaNombreButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.buscaNombreButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.buscaNombreButton.FlatAppearance.BorderSize = 0;
             this.buscaNombreButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buscaNombreButton.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -146,7 +150,7 @@ namespace ClientRESTAPI
             // 
             // buscarDNIButton
             // 
-            this.buscarDNIButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.buscarDNIButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.buscarDNIButton.FlatAppearance.BorderSize = 0;
             this.buscarDNIButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buscarDNIButton.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -162,6 +166,8 @@ namespace ClientRESTAPI
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.dineroTextBox);
+            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.eliminarButton);
             this.groupBox1.Controls.Add(this.dniTextBox);
@@ -190,6 +196,26 @@ namespace ClientRESTAPI
             this.groupBox1.Text = "Gestión";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // dineroTextBox
+            // 
+            this.dineroTextBox.Location = new System.Drawing.Point(331, 78);
+            this.dineroTextBox.Multiline = true;
+            this.dineroTextBox.Name = "dineroTextBox";
+            this.dineroTextBox.Size = new System.Drawing.Size(136, 34);
+            this.dineroTextBox.TabIndex = 16;
+            this.dineroTextBox.Text = "0";
+            this.dineroTextBox.TextChanged += new System.EventHandler(this.dineroTextBox_TextChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(214, 83);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(72, 21);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Dinero:";
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.campo3);
@@ -214,7 +240,7 @@ namespace ClientRESTAPI
             // nomyApeBuscaButton
             // 
             this.nomyApeBuscaButton.AutoSize = true;
-            this.nomyApeBuscaButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.nomyApeBuscaButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.nomyApeBuscaButton.FlatAppearance.BorderSize = 0;
             this.nomyApeBuscaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nomyApeBuscaButton.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -239,7 +265,7 @@ namespace ClientRESTAPI
             // nomyTelfBuscaButton
             // 
             this.nomyTelfBuscaButton.AutoSize = true;
-            this.nomyTelfBuscaButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.nomyTelfBuscaButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.nomyTelfBuscaButton.FlatAppearance.BorderSize = 0;
             this.nomyTelfBuscaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nomyTelfBuscaButton.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -263,10 +289,10 @@ namespace ClientRESTAPI
             // 
             // historialTextBox
             // 
-            this.historialTextBox.Location = new System.Drawing.Point(319, 30);
+            this.historialTextBox.Location = new System.Drawing.Point(331, 25);
             this.historialTextBox.Multiline = true;
             this.historialTextBox.Name = "historialTextBox";
-            this.historialTextBox.Size = new System.Drawing.Size(169, 89);
+            this.historialTextBox.Size = new System.Drawing.Size(136, 34);
             this.historialTextBox.TabIndex = 7;
             // 
             // telefonoTextBox
@@ -315,9 +341,9 @@ namespace ClientRESTAPI
             this.label9.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(214, 30);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(87, 21);
+            this.label9.Size = new System.Drawing.Size(119, 21);
             this.label9.TabIndex = 9;
-            this.label9.Text = "Historial:";
+            this.label9.Text = "Localizacion:";
             // 
             // label8
             // 
@@ -378,7 +404,7 @@ namespace ClientRESTAPI
             // 
             // ModificarButton
             // 
-            this.ModificarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.ModificarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.ModificarButton.FlatAppearance.BorderSize = 0;
             this.ModificarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ModificarButton.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -393,7 +419,7 @@ namespace ClientRESTAPI
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -408,20 +434,20 @@ namespace ClientRESTAPI
             // 
             // toolStrip1
             // 
-            this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Left;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripLabel1,
             this.toolStripLabel2,
             this.toolStripLabel3,
-            this.toolStripLabel4,
-            this.toolStripLabel5});
+            this.toolStripLabel4});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(107, 701);
             this.toolStrip1.TabIndex = 13;
             this.toolStrip1.Text = "toolStrip1";
+            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
             // 
             // toolStripLabel1
             // 
@@ -430,8 +456,7 @@ namespace ClientRESTAPI
             this.toolStripLabel1.Margin = new System.Windows.Forms.Padding(0, 25, 0, 25);
             this.toolStripLabel1.Name = "toolStripLabel1";
             this.toolStripLabel1.Size = new System.Drawing.Size(102, 24);
-            this.toolStripLabel1.Text = "Empresas";
-            this.toolStripLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolStripLabel1.Text = "Usuarios";
             this.toolStripLabel1.Click += new System.EventHandler(this.toolStripLabel1_Click);
             // 
             // toolStripLabel2
@@ -451,28 +476,8 @@ namespace ClientRESTAPI
             this.toolStripLabel3.Margin = new System.Windows.Forms.Padding(0, 1, 0, 25);
             this.toolStripLabel3.Name = "toolStripLabel3";
             this.toolStripLabel3.Size = new System.Drawing.Size(102, 24);
-            this.toolStripLabel3.Text = "Usuarios";
+            this.toolStripLabel3.Text = "Empresa";
             this.toolStripLabel3.Click += new System.EventHandler(this.toolStripLabel3_Click);
-            // 
-            // toolStripLabel4
-            // 
-            this.toolStripLabel4.Font = new System.Drawing.Font("Gadugi", 10F, System.Drawing.FontStyle.Bold);
-            this.toolStripLabel4.ForeColor = System.Drawing.Color.White;
-            this.toolStripLabel4.Margin = new System.Windows.Forms.Padding(0, 1, 0, 25);
-            this.toolStripLabel4.Name = "toolStripLabel4";
-            this.toolStripLabel4.Size = new System.Drawing.Size(102, 24);
-            this.toolStripLabel4.Text = "Compras";
-            this.toolStripLabel4.Click += new System.EventHandler(this.toolStripLabel4_Click);
-            // 
-            // toolStripLabel5
-            // 
-            this.toolStripLabel5.Font = new System.Drawing.Font("Gadugi", 10F, System.Drawing.FontStyle.Bold);
-            this.toolStripLabel5.ForeColor = System.Drawing.Color.White;
-            this.toolStripLabel5.Margin = new System.Windows.Forms.Padding(0, 1, 0, 25);
-            this.toolStripLabel5.Name = "toolStripLabel5";
-            this.toolStripLabel5.Size = new System.Drawing.Size(102, 24);
-            this.toolStripLabel5.Text = "Reservas";
-            this.toolStripLabel5.Click += new System.EventHandler(this.toolStripLabel5_Click);
             // 
             // label4
             // 
@@ -490,7 +495,7 @@ namespace ClientRESTAPI
             // labelClientes
             // 
             this.labelClientes.AutoSize = true;
-            this.labelClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.labelClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.labelClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelClientes.Font = new System.Drawing.Font("Gadugi", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelClientes.ForeColor = System.Drawing.Color.White;
@@ -499,6 +504,17 @@ namespace ClientRESTAPI
             this.labelClientes.Size = new System.Drawing.Size(228, 65);
             this.labelClientes.TabIndex = 54;
             this.labelClientes.Text = "Clientes";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(698, 87);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.RowTemplate.Height = 28;
+            this.dataGridView1.Size = new System.Drawing.Size(674, 448);
+            this.dataGridView1.TabIndex = 58;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // buttonAtras
             // 
@@ -509,31 +525,84 @@ namespace ClientRESTAPI
             this.buttonAtras.Font = new System.Drawing.Font("Gadugi", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAtras.ForeColor = System.Drawing.Color.White;
             this.buttonAtras.IconChar = FontAwesome.Sharp.IconChar.LongArrowAltLeft;
-            this.buttonAtras.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(98)))), ((int)(((byte)(138)))));
+            this.buttonAtras.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.buttonAtras.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.buttonAtras.Location = new System.Drawing.Point(107, 30);
+            this.buttonAtras.Location = new System.Drawing.Point(116, 12);
             this.buttonAtras.Name = "buttonAtras";
             this.buttonAtras.Size = new System.Drawing.Size(38, 40);
             this.buttonAtras.TabIndex = 55;
             this.buttonAtras.UseVisualStyleBackColor = false;
             this.buttonAtras.Click += new System.EventHandler(this.buttonAtras_Click);
             // 
-            // dataGridView1
+            // button2
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(698, 87);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(674, 557);
-            this.dataGridView1.TabIndex = 58;
+            this.button2.AutoSize = true;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(698, 565);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(194, 50);
+            this.button2.TabIndex = 60;
+            this.button2.Text = "Modificar";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.AutoSize = true;
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(940, 565);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(194, 50);
+            this.button3.TabIndex = 61;
+            this.button3.Text = "Actualizar";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.AutoSize = true;
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(1178, 565);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(194, 50);
+            this.button4.TabIndex = 62;
+            this.button4.Text = "Eliminar";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // toolStripLabel4
+            // 
+            this.toolStripLabel4.Font = new System.Drawing.Font("Gadugi", 10F, System.Drawing.FontStyle.Bold);
+            this.toolStripLabel4.ForeColor = System.Drawing.Color.White;
+            this.toolStripLabel4.Name = "toolStripLabel4";
+            this.toolStripLabel4.Size = new System.Drawing.Size(102, 24);
+            this.toolStripLabel4.Text = "Compras";
+            this.toolStripLabel4.Click += new System.EventHandler(this.toolStripLabel4_Click);
             // 
             // ClienteForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(211)))), ((int)(((byte)(239)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(1384, 701);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.buttonAtras);
             this.Controls.Add(this.labelClientes);
@@ -586,8 +655,6 @@ namespace ClientRESTAPI
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.ToolStripLabel toolStripLabel3;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel4;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel5;
         private System.Windows.Forms.TextBox campo1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox campo3;
@@ -598,5 +665,11 @@ namespace ClientRESTAPI
         private System.Windows.Forms.Label labelClientes;
         private FontAwesome.Sharp.IconButton buttonAtras;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox dineroTextBox;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel4;
     }
 }
